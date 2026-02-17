@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+@import "tailwindcss";
+
+@theme {
+    /* 1. Define colors with the --color- prefix to create color utilities */
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-dark: #1b1d1e;
+    --color-grey: #999999;
+    --color-off-white: #CCCCCC;
+
+
+    --color-yellow-primary: #f59e0b;
+    --color-yellow-soft: #f6e683;
+    --color-purple-primary: #4928fd;
+
+    /* 2. Define fonts with the --font- prefix to create font utilities */
+    --font-sans: "Inter Tight", "Inter Tight Fallback", system-ui, sans-serif;
+    --font-serif: "Instrument Serif", "Instrument Serif Fallback", serif;
+}
+
+body {
+    background-color: var(--color-black);
+
+}
+
