@@ -1,36 +1,37 @@
 import logoWhite from '/src/assets/logowhite.svg'
 import {Link} from "react-router";
 import {motion} from "framer-motion";
-
-
-const navLinks = [{
-    name: "Services", to: "Services"
-}, {
-    name: "Work", to: "Work"
-}, {
-    name: "Team", to: "Team"
-}, {
-    name: "Pricing", to: "Pricing"
-}, {
-    name: "Awards", to: "Awards"
-}, {
-    name: "Contact", to: "Contact"
-}, {
-    name: "About us", to: "About us"
-},]
+import {navLinks} from "../constants/data.js";
+import {useScroll, useMotionValueEvent} from "framer-motion";
+import {useState} from "react";
 
 
 export const NavBar = () => {
-    return (<nav className={`py-5 max-h-[5rem] mx-20`}>
-        <div className={`flex justify-around items-center`}>
+    const [isScrolled, setIsScrolled] = useState(false);
+    const {scrollY} = useScroll();
+
+    useMotionValueEvent(scrollY, "change", (latest) => {
+        if (latest > 50) {
+            setIsScrolled(true);
+        } else {
+            setIsScrolled(false);
+        }
+    });
+
+    return (<nav
+        className={`
+                fixed top-8 left-1/2 -translate-x-1/2 z-[100] w-[70rem] rounded-full px-1 py-3
+                transition-all duration-500 ease-in-out
+                 ${isScrolled ? "bg-black/80 backdrop-blur-md border border-white/10 shadow-2xl" : "bg-transparent"}
+            `}>
+        <div className={`flex justify-around items-center rounded-full px-4`}>
             <Link to={'/'} className="cursor-pointer group">
                 <img src={logoWhite} alt={"logo"}/>
             </Link>
 
             <div>
                 <ul className="flex justify-around items-center w-[40rem] h-[3rem] px-1
-               rounded-full bg-white/10 backdrop-blur-lg border-none
-               shadow-[0_0_20px_rgba(255,255,255,0.15)]">
+               rounded-full bg-white/10 backdrop-blur-lg border-none">
 
                     {navLinks.map((link) => (<motion.li
                         key={link.name}
