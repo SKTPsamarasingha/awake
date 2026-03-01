@@ -68,8 +68,8 @@ const Services = () => {
                 </div>))}
             </div>
 
-            <div className="ml-60 mt-65
-          mx-auto w-[75rem]
+            <div className="ml-45 mt-65
+          mx-auto w-[70rem]
           flex flex-col gap-6 md:flex-row md:items-center md:justify-between
           rounded-3xl
           bg-dark

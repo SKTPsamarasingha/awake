@@ -34,7 +34,7 @@ export const Team = () => {
 
     }, [cardRef]);
 
-    return (<section className={`w-full h-[50rem] mt-25 mb-15 flex items-center flex-col `}>
+    return (<section className={`w-full h-[50rem] mt-30 mb-15 flex items-center flex-col `}>
         <SplitBlurText
             className="mt-25 z-20 text-white font-[450] text-[48px] md:text-[48px] text-center leading-[1.1] tracking-normal
 ">
@@ -43,9 +43,9 @@ export const Team = () => {
         </SplitBlurText>
 
         {/*team container*/}
-        <div ref={cardRef} className={'flex items-center gap-10 mt-25'}>
+        <div ref={cardRef} className={'flex items-center gap-10 mt-20'}>
             {team.map(({name, job, image}) => (
-                <div className={'flex items-center flex-col gap-4 w-[18rem] h-[28rem] group'}>
+                <div className={'flex items-center flex-col gap-4 w-[15rem] h-[25rem] group'}>
                     <img
                         className={`w-[20rem] h-[15rme] object-cover grayscale-0 group-hover:grayscale transition-all duration-500 ease-in-out`}
                         src={image} alt={'logon'}/>

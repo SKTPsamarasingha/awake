@@ -32,7 +32,7 @@ const Pricing = () => {
                     <span className="text-white font-serif italic ml-5 font-[23px]"> Business</span>
                 </SplitBlurText>
 
-        <div className={'mt-30 flex items-center justify-center gap-10'}>
+        <div className={'mt-20 flex items-center justify-center gap-10'}>
             {
                 prices.map(({name, description, price, features, color, text}) => (
                     <div className={'flex w-[45rem] h-[23rem] rounded-[15px]  '}

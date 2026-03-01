@@ -42,14 +42,14 @@ const Hero = () => {
 
             <div className={'flex items-center flex-col gap-10 mt-40'}>
                 <SplitBlurText
-                    className="z-20 text-white font-[450] text-[96px] md:text-[6rem] text-center leading-[1.1] tracking-normal
+                    className="z-20 text-white font-[450] text-[86px] md:text-[5.5rem] text-center leading-[1.1] tracking-normal
 ">
                     Building bold brands <br/> with
                     <span className="text-white font-serif italic ml-5 font-[23px]">thoughtful design</span>
                 </SplitBlurText>
 
                 <div ref={containerRef} className={'mt-5 flex flex-col items-center'}>
-                    <p className={`text-grey w-[38rem] text-center`}>At Awake, we help small startups
+                    <p className={`text-grey w-[35rem] text-center  text-[14px]`}>At Awake, we help small startups
                         tackle
                         the world’s
                         biggest challenges with tailored solutions, guiding you from strategy to success in a
@@ -60,8 +60,8 @@ const Hero = () => {
                         <ArrowBtn
                             text="Get started"
                             Icon={ArrowRightIcon}
-                            width={170}
-                            height={45}
+                            width={165}
+                            height={42}
                             dark={true}
 
                         />
@@ -91,7 +91,7 @@ const Hero = () => {
 
                     </div>
 
-                    <div className={'mt-30 ml-8'}>
+                    <div className={'mt-15 ml-8'}>
                         <LogoMarquee
                             items={logos}
                             speed={15}

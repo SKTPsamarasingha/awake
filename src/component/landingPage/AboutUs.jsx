@@ -46,7 +46,7 @@ export const AboutUs = () => {
     return (
         <section
             ref={containerRef}
-            className="relative  flex flex-col items-center text-center mt-30">
+            className="relative  flex flex-col items-center text-center mt-35">
 
             <SplitBlurText
                 className="w-[70rem] z-20 text-white font-[450] text-[48px] md:text-[48px] text-center text-sm/12 tracking-normal">
@@ -67,7 +67,7 @@ export const AboutUs = () => {
                 ))}
             </div>
 
-            <div ref={statsRef} className={`mt-30 grid grid-cols-1 md:grid-cols-3 gap-60 relative left-10`}>
+            <div ref={statsRef} className={`mt-30 grid grid-cols-1 md:grid-cols-3 gap-35 relative left-10`}>
 
                 {stats.map((item, index) => (
                     <div
@@ -86,7 +86,7 @@ export const AboutUs = () => {
                             end={startCount ? item.value : 0} // Hold at 0 until startCount is true
                             duration={3}
                             separator=","
-                            className="text-white font-sans text-[10rem] md:text-[10rem] font-semibold leading-none"
+                            className="text-white font-sans text-[8rem] md:text-[8rem] font-semibold leading-none"
                         />
 
 

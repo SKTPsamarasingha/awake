@@ -4,7 +4,7 @@ import {ArrowRightIcon} from "@heroicons/react/24/outline/index.js";
 
 const Banner = () => {
     return (
-        <section className="w-[100rem] bg-black px-4 py-20 flex items-center justify-center ml-20 mt-30">
+        <section className="w-[100rem] bg-black px-4 py-20 flex items-center -ml-5 justify-center  mt-30">
             <div
                 className="
           rounded-[28px]
